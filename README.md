@@ -1,16 +1,119 @@
-# React + Vite
+# Portfolio Front-End — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal desarrollado como **Single Page Application** para presentar proyectos, habilidades y experiencia como desarrollador Front-End.
 
-Currently, two official plugins are available:
+El objetivo principal es mostrar no solo tecnologías utilizadas, sino **cómo se aplican en proyectos reales**, con foco en UX, accesibilidad y buenas prácticas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 [Ver portfolio en vivo](#)  
+👉 [Repositorio](#)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧱 Tecnologías utilizadas
+
+- **React** (JavaScript)
+- **Vite**
+- **Tailwind CSS**
+- **Framer Motion**
+- **HTML5 / CSS3**
+
+---
+
+## 🧠 Enfoque del proyecto
+
+- Arquitectura de componentes clara y escalable
+- Animaciones sutiles y funcionales (no decorativas)
+- Separación de datos y UI
+- Código legible y mantenible
+- UX enfocada en reclutadores y equipos técnicos
+
+---
+
+## 🎨 Características principales
+
+### 🧭 Landing Page (Single Page)
+
+- Navegación simple y directa
+- Header fijo con acciones rápidas
+- Diseño minimalista y responsive
+
+---
+
+### 🎬 Animaciones con Framer Motion
+
+- Animación de secciones al entrar en viewport
+- Grid de proyectos con **stagger**
+- Cards animadas individualmente
+- Transiciones suaves y controladas
+
+---
+
+### 🧩 Sección de Proyectos
+
+- Cards reutilizables
+- Expansión interactiva para mostrar logros técnicos:
+  - Manejo de estado
+  - Consumo de APIs
+  - Formularios y validaciones
+  - Componentes reutilizables
+  - Responsive design
+- Enlaces a demo y código
+
+---
+
+### 📄 Header funcional
+
+- Botón **Copy** para copiar el email al portapapeles
+- Botón **CV** para descargar el currículum en PDF
+- Fallback para compatibilidad de navegadores
+
+---
+
+## 📁 Estructura del proyecto
+
+```txt
+src/
+ ├─ animations/       # Variantes de animaciones
+ ├─ components/       # Componentes reutilizables
+ ├─ data/             # Datos de proyectos
+ ├─ hooks/            # Custom hooks
+ ├─ App.jsx
+ └─ main.jsx
+public/
+ └─ cv-joaquin-esteban.pdf
+🛠️ Instalación y uso
+bash
+Copiar código
+# Clonar repositorio
+git clone https://github.com/tu-usuario/tu-repo.git
+
+# Entrar al proyecto
+cd tu-repo
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+Abrir en el navegador:
+
+arduino
+Copiar código
+http://localhost:5173
+📌 Estado del proyecto
+🟢 En desarrollo
+El portfolio se irá actualizando con nuevos proyectos, mejoras de UX y optimizaciones.
+
+📬 Contacto
+Email: joaquinesteba84@gmail.com
+
+GitHub: https://github.com/joaquinesteban
+
+📝 Licencia
+Este proyecto es de uso personal.
+El diseño y el código pueden ser tomados como referencia, pero no replicados con fines comerciales sin autorización.
+```
