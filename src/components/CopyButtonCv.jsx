@@ -1,8 +1,24 @@
+import { useState } from "react";
+
 const CopyButtonCv = () => {
+  const [copy, setCopy] = useState(false);
+
+  const text = "joaquinesteban84@gmail.com";
+
   const handleCopy = () => {
-    if (!navigator.clipboard) {
-      navigator.clipboard.writeText("joaquinesteban84@gmail.com");
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(text);
+    } else {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
     }
+
+    setCopy(true);
+    setTimeout(() => setCopy(false), 1500);
   };
 
   return (
@@ -13,8 +29,9 @@ const CopyButtonCv = () => {
       hover:shadow-lg
       active:translate-y-0 active:scale-95"
     >
-      Copy
+      {copy ? "Copied ✓" : "Copy"}
     </button>
+    //mejorar el check de confirmacion de copiado
   );
 };
 
