@@ -36,7 +36,7 @@ const Hero = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
       >
-        <ContactmeButton /> →
+        <ContactmeButton name="Contactame →" />
       </motion.button>
     </section>
   );

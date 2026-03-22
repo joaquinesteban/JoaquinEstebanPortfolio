@@ -1,3 +1,5 @@
+import ContactmeButton from "./ContactmeButton";
+
 const Contact = () => {
   return (
     <section className="py-24 px-10 text-center bg-neutral-100">
@@ -22,12 +24,12 @@ const Contact = () => {
         >
           Email
         </button>
-        <button
+
+        <ContactmeButton
           className="px-6 py-3 rounded-full border bg-white text-black transition-all duration-300 ease-out
         hover:bg-[#25D366] hover:text-white hover:border-transparent hover:scale-[1.03] hover:shadow-lg active:scale-95"
-        >
-          WhatsApp
-        </button>
+          name="Whatsapp"
+        />
       </div>
     </section>
   );
