@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CopyButtonCv = () => {
+const CopyButtonMail = () => {
   const [copy, setCopy] = useState(false);
 
   const text = "joaquinesteban84@gmail.com";
@@ -35,4 +35,4 @@ const CopyButtonCv = () => {
   );
 };
 
-export default CopyButtonCv;
+export default CopyButtonMail;

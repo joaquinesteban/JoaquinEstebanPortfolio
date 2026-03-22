@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ContactmeButton from "./ContactmeButton";
 
 const Hero = () => {
   return (
@@ -35,7 +36,7 @@ const Hero = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
       >
-        Contactame →
+        <ContactmeButton /> →
       </motion.button>
     </section>
   );

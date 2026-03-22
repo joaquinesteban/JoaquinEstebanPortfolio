@@ -1,4 +1,5 @@
-import CopyButtonCv from "./CopyButtonCv";
+import CopyButtonCv from "./CopyButtonMail";
+import DownloadCvButton from "./DownloadCvButton";
 
 const Header = () => {
   return (
@@ -7,12 +8,7 @@ const Header = () => {
         <div className="flex gap-3">
           <span className="font-medium p-2">joaquinandres1718@gmail.com</span>
           <CopyButtonCv text={"joaquinesteban84@gmail.com"} />
-          <button
-            className="px-3 py-1 bg-white rounded-full shadow-sm transition-all duration-200 ease-out
-            hover:-translate-y-0.5 hover:scale-[1.03] hover:shadow-lg active:translate-y-0 active:scale-95"
-          >
-            CV
-          </button>
+          <DownloadCvButton />
         </div>
 
         <div className="flex gap-4 ">
