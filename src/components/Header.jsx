@@ -3,7 +3,7 @@ import DownloadCvButton from "./DownloadCvButton";
 
 const Header = () => {
   return (
-    <header className="px-10 pt-8">
+    <header id="home" className="px-10 pt-8">
       <nav className="flex justify-between items-center text-sm text-neutral-600">
         <div className="flex gap-3">
           <span className="font-medium p-2">joaquinandres1718@gmail.com</span>
