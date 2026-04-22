@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      className="max-w-5xl mx-auto py-20 px-4"
+      className="max-w-5xl mx-auto py-20 px-4 "
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -14,7 +14,7 @@ const Projects = () => {
     >
       <h2 className="text-3xl font-bold mb-10">Proyectos</h2>
 
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className="  grid gap-8 md:grid-cols-3 justify-items-center md:justify-items-stretch ">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

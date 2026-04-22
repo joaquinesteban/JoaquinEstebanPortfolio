@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const ProjectCard = ({ title, description, tags = [], demo, code }) => {
   return (
     <motion.div
-      className="w-5/6 bg-white rounded-2xl p-5 shadow-md"
+      className="w-5/6 bg-white rounded-2xl p-5 shadow-md "
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
